@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suiteA]">
+  <parameter name="expectedCityAPI" value="Lucknow"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="expectedCityUI" value="Lucknow"/>
+  <listeners>
+    <listener class-name="weather.automation.testVagrantUtkarsh.myExtentListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="testA(failed)">
+    <classes>
+      <class name="weather.automation.testVagrantUtkarsh.myTest.NDTVHomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyUIAndAPIData"/>
+        </methods>
+      </class> <!-- weather.automation.testVagrantUtkarsh.myTest.NDTVHomePageTest -->
+    </classes>
+  </test> <!-- testA(failed) -->
+</suite> <!-- Failed suite [suiteA] -->
